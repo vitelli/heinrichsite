@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!-- DEFAULT COLORS -->
+        <meta name="color:Text" content="#000"/>
+        <meta name="color:Highlight Color" content="#e73839"/>
+        <meta name="color:Post Labels" content="#FFFFEA"/>
+        
+        <!-- END DEFAULT COLORS -->
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>{Title}{block:PostSummary} - {PostSummary}{/block:PostSummary}</title>
+        <link rel="icon" href="{Favicon}"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/>
+        
+        <!-- iPhone -->
+        <meta name="viewport" content="width=920"/>
+        <link rel="apple-touch-icon" href="{PortraitURL-128}"></link>
+
+        <style type="text/css">
+            body {
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+                background: url(http://i.imgur.com/jJCP4JX.jpg) no-repeat center center                    fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-color: #000000;
+                color: {color:Text};
+            }
+            
+    #container{
+    width: 980px;
+    margin:auto;
+    }
+    
+
+            #header {
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                padding: 0;
+                width: 220px;
+                float:left;
+                background: ;
+                border: 0px solid #ddd;
+            }
+
+            #header a, #header a:active {
+                outline: 0;
+            }
+
+                #header h1 {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 3em;
+                    font-weight: bold;
+                    text-align: left;
+                    margin: 0px 0px 0px 5px;
+                    padding: 10px 10px 10px 0px;
+                    color: #C4C4C4;
+                    opacity: 0.75;
+                    display: block;
+                    letter-spacing: -.08em;
+                }
+                
+                #header h2 {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 2em;
+                    font-weight: normal;
+                    text-align: left;
+                    margin: 0px 0px 0px 12px;
+                    padding: 0px 10px 10px 0px;
+                    color: #C4C4C4;
+                    opacity: 0.75;
+                    display: block;
+                    letter-spacing: -.08em;
+                }
+                
+                #header h3 {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 0.9em;
+                    font-weight: normal;
+                    text-align: left;
+                    margin: 0px 0px 0px 0px;
+                    padding: 0px 10px 10px 0px;
+                    color: #C4C4C4;
+                    opacity: 0.9;
+                    display: block;
+                    letter-spacing: -.08em;
+                }
+
+                #header ul {
+                    list-style-type: none;
+                    display: block;
+                    margin: 0px 0px 0px 10px;
+                    margin-bottom: 10px;
+                    padding-bottom: 20px;
+                    text-align: left;
+                  /*
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                  */
+                }
+
+                    #header ul li {
+                        display: block;
+            
+                    }
+
+                        #header ul li a {
+                            font-family: Helvetica, Arial, sans-serif;
+                            font-size: 1.8em;
+                            color: #C4C4C4;
+                            background-color:;
+                            opacity: 0.75;
+                            border: 0px solid #ddd;
+                            padding-top: 2%;
+                            padding-bottom: 2.5%;
+                            padding-left: 0%;
+                            padding-right: 2%; 
+                            text-decoration: none;
+                            font-weight: normal;
+                            text-transform: ;
+                            line-height: 20px;
+                        }
+
+                            #header ul li a:hover {
+                                border-color: #ccc;
+                            }
+
+                #content {
+                text-align: left;
+                margin: 10px 0px 0px 0px;
+                width: 720px;
+                float:left;
+                background:;
+                border: 0px solid #ddd;
+            }
+            
+    #pages{list-style:none;
+    margin:0px 0px;
+    border-top:0px solid {color:};
+      padding:0px;}
+    #pages li{
+    }
+ 
+    #pages a{
+    padding:0px 0px;
+    text-decoration:none;
+    border-bottom:0px solid {color:};
+    display:block;
+    }
+    
+    
+    div.tags {
+                text-align: left;
+                font-size: 0.8em;
+                margin: 0px 0px 0px 0px;
+                margin-bottom: 80px;
+                width: 720px;
+                float:left;
+                border: 0px solid #ddd;
+            }
+            
+    div.tags ul {
+                    list-style-type: none;
+                    display: block;
+                    margin: 0em 0em 0em 0em;
+                    text-align: left;
+                  /*
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                  */
+                }
+
+    div.tags ul li {
+                        display: inline;
+                    }
+
+    div.tags ul li a {
+                            font-family: Helvetica, Arial, sans-serif;
+                            font-size: 0.8em;
+                            color: #C4C4C4;
+                            border: 0px solid #ddd;
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            padding-left: 0%;
+                            padding-right: 2%; 
+                            text-decoration: none;
+                            font-weight: normal;
+                            text-transform:;
+                            line-height: 20px;
+                        }
+    .clear{
+    clear:both;
+    }
+
+                
+            span.noborder a {
+                border: none !important;
+            }
+
+            .post-header {
+                font: Normal 1.5em Helvetica;
+                font-style: bold;
+                text-transform: lowercase;
+                color: #C4C4C4;
+                padding: 0px 0px 0px 0px;
+                border-bottom: 0px dotted #000;
+                margin-bottom: -15px
+            }
+
+            .post-header a, .post-header a:active {
+                color: #C4C4C4;
+                outline: 0px;
+                text-decoration: none;
+            }
+            
+            div.text,
+            div.photo,
+            div.link,
+            div.video,
+            div.audio,
+            div.conversation,
+            div.quote {
+                padding: 10px 0px 0px 10px;
+                margin-left: 110px;
+                font-size: 0.9em;
+                font-family: Helvetica, Arial, sans-serif;
+                position: relative;
+                border-bottom: 0px solid #ddd;
+                min-height: 160px;
+                line-height: 1.4em;
+            }
+
+                div.text a,
+                div.photo a,
+                div.link a,
+                div.video a,
+                div.audio a,
+                div.conversation a,
+                div.quote a {
+                    text-decoration: none;
+                    border-bottom-width: 0px;
+                    border-bottom-style: dotted;
+                    border-bottom-color: {color:Highlight Color};
+                    color: {color:Highlight Color};
+                }
+                
+                    div.text a:hover,
+                    div.photo a:hover,
+                    div.link a:hover,
+                    div.video a:hover,
+                    div.audio a:hover,
+                    div.conversation a:hover,
+                    div.quote a:hover {
+                        color: {color:Text};
+                        text-decoration: none;
+                        border-bottom-width: 0px;
+                        border-bottom-style: solid;
+                        border-bottom-color: {color:Highlight Color};
+                    }
+                    
+            div.text h2 {
+                text-align: left;
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+                font-size: 160%;
+                font-style: normal;
+                font-family: Helvetica, Arial, sans-serif;
+                color: {color:Text};
+                font-weight: normal;
+                letter-spacing: -.67px;
+            }
+            
+                div.link h2 a {
+                    text-align: left;
+                    padding: 0px 0px 0px 0px;
+                    margin-top: 20px;
+                    font-size: 100%;
+                    font-style: normal;
+                    font-family: Helvetica, Arial, sans-serif;
+                    color: {color:Text};
+                    font-weight: normal;
+                    letter-spacing: -.67px;
+                    text-decoration: underline;
+                    border: none;
+                }
+
+                div.link h2 a:hover {
+                    text-decoration: underline;
+                    border: none;
+                }
+                    
+            div.photo a img {
+                padding: 1px;
+                border: 0px solid ;
+                background-color: #C4C4C4;
+            }
+            
+                div.photo a img:hover {
+                    border: 0px solid ;
+                    background-color: #C4C4C4;
+                }
+
+            div.text ol, div.text ul {
+                margin: 10px 0px 0px 0px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 0.8em;
+                text-align: justify;
+            }
+
+            div.text blockquote,
+            div.photo blockquote,
+            div.link blockquote,
+            div.quote blockquote,
+            div.audio blockquote,
+            div.video blockquote {
+                font-style: italic;
+                text-align: justify;
+            }
+            
+            div.quote h3 {
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            div.quote h3.long {
+                font-size: 120%;
+            }
+        
+            div.quote h3.medium {
+                font-size: 120%;
+                line-height: 100%;
+            }
+        
+            div.quote h3.short {
+                font-size: 130%;
+                line-height: 100%;
+            }
+        
+            div.conversation h2 {
+                text-align: left;
+                padding: 0px;
+                margin: 0px 0px 0px 0px;
+                font-size: 150%;
+                font-style: normal;
+                font-family: Helvetica, Arial, sans-serif;
+                color: {color:Text};
+                font-weight: normal;
+                font-variant: small-caps;
+                letter-spacing: 0.1em;
+                text-transform: capitalize;
+            }
+            
+            div.conversation ul {
+                font-size: 1em;
+                list-style-type: none;
+            }
+            
+            div.conversation li {
+                text-align: left;
+            }
+            
+                div.conversation li span.label {
+                    font-weight: bold;
+                }
+                
+            img.sx {
+                float: left;
+                margin-right: 5px;
+            }
+        
+            div.navigation span {
+                margin: 0px 0px 0px 0px;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 0.6em;
+                color: "#e73839";
+                float: center;
+                text-align: center;
+            }
+            
+            div.navigation p span a {
+                padding: 5px;
+                background-color: ;
+                color: "#e73839";
+                font-weight: bold;
+                text-decoration: none;
+            }
+            
+                div.navigation p span a:hover {
+                    background-color: ;
+                }
+                
+            #footer {
+                text-align: left;
+                padding-top: 5px;
+                border-top-width: 0px;
+                border-top-style: solid;
+                border-top-color: #000;
+                font: Normal 10px/1em Helvetica, Arial, sans-serif;
+                margin: 0px 0px;
+                margin-left: 0px;
+            }
+                
+                #footer a {
+                    color: {color:Highlight Color};
+                    text-decoration: none;
+            }
+                
+                #footer ul {
+                    list-style-type: none;
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    text-align: left;
+                  /*
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
+                  */
+            }
+
+                #footer ul li {
+                        display: inline;
+            }
+
+                #footer ul li a {
+                            font-family: Helvetica, Arial, sans-serif;
+                            font-size: 1em;
+                            color: #C4C4C4;
+                            background-color:;
+                            border: 0px solid #ddd;
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                            padding-left: 2%;
+                            padding-right: 2%; 
+                            text-decoration: none;
+                            font-weight: normal;
+                            text-transform: lowercase;
+                            line-height: 20px;
+            }
+
+                #footer ul li a:hover {
+                                border-color: #ccc;
+                            }
+
+            
+						.query { font-weight: bold; }
+
+            {CustomCSS}
+        </style>
+    </head>
+    <body>
+    <div id="container">
+        <!-- Header -->
+        <div id="header">
+        <div id="index-bar"></div>
+            <h1>{Title}</h1>
+        <ul id="pages">
+        {block:HasPages}
+        {block:Pages}<li><a href="{URL}">{Label}</a></li>
+        {/block:Pages}
+        {/block:HasPages}
+            <br>
+            <li><a>CONTACT</a></li>
+            <li><a>915.241.3544</a></li>
+            <li><h3><a href="mailto:chris@chrisheinrichdp.com">chris@chrisheinrichdp.com</a></h3></li>
+		</ul>
+            </div>
+
+        <!-- Content -->
+        <div id="content">
+	    <div class="clear"></div>
+        <div id="posts" class="autopagerize_page_element">
+            
+            <!-- Post -->
+            {block:Posts}
+            {block:Regular}   
+                    <div class="text">
+                        {Body}
+                    </div>
+                {/block:Regular}
+                    
+                {block:Photo}
+                    <div class="photo">
+                        <span class="noborder">{LinkOpenTag}<img src="{PhotoURL-500}"
+                        alt="{PhotoAlt}"/>{LinkCloseTag}</span>
+                        {block:Caption}
+                            <p>{Caption}</p>
+                        {/block:Caption}
+                    </div>
+                {/block:Photo}
+                    
+                {block:Quote}
+                    <div class="quote">
+                        <h3 class="{Length}">&#8220 {Quote} &#8221;</h3>
+                        {block:Source}<p>{Source}</p>{/block:Source}
+                    </div>
+                {/block:Quote}
+                    
+                {block:Link}
+                    <div class="link">
+                        <h2><a href="{URL}" class="link" {Target}>{Name}</a></h2>
+
+                        {block:Description}
+                            <p>{Description}</p>
+                        {/block:Description}
+                    </div>
+                {/block:Link}
+                    
+                {block:Conversation}
+                    <div class="conversation">
+                        {block:Title}<h2>{Title}</h2>{/block:Title}
+
+                        <ul>
+                            {block:Lines}
+                                <li>
+                                    {block:Label}<span class="label">{Label}</span>{/block:Label}
+                                    {Line}
+                                </li>
+                            {/block:Lines}
+                        </ul>
+                    </div>
+                {/block:Conversation}
+                    
+                {block:Audio}
+                    <div class="audio">
+                        {AudioPlayerGrey}
+                        
+                        {block:Caption}<p>{Caption}</p>{/block:Caption}
+                    </div>
+                {/block:Audio}
+                    
+                {block:Video}
+                    <div class="video">
+                        {Video-500}
+
+                        {block:Caption}<p>{Caption}</p>{/block:Caption}
+                    </div>
+                {/block:Video}
+    
+                {block:HasTags}
+                        {block:Tags}
+                        {/block:Tags}
+                {/block:HasTags}
+                
+            {/block:Posts}
+            
+            {block:PermalinkPage}
+        {/block:PermalinkPage}
+
+            </div>
+            
+        </div>
+        <div class="clear">
+        </div>
+                
+        <!-- Footer -->
+        </div>
+    </body>
+</html>
